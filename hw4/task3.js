@@ -42,10 +42,7 @@ var underAge = (groupName) => {
                         : "У групі " + groupName + " немає неповнолітніх студентів");
 }
 
-underAge("PS");
-underAge("KNM");
-underAge("PSM");
-underAge("KN");
+getGroups(students).forEach(groupName => underAge(groupName));
 
 
 
